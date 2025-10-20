@@ -2,20 +2,28 @@ project:
   type: website
 
 website:
-  title: "my website"
+  title: "Sasipimt"
+  reader-mode: true
   navbar:
+    background: primary
+    title: false
+    search: true
     left:
-      - href: index.qmd
-        text: Home
-      - about.qmd
+      - text: "Home"
+        href: index.qmd
+    tools:
+      - icon: github
+        href: https://github.com/sasipimt/blog
+  site-url: "https://sasipimt.github.io/blog/"
 
 format:
   html:
+    respect-user-color-scheme: true
     theme:
-      - cosmo
-      - brand
+      light: flatly
+      dark: darkly
     css: styles.css
     toc: true
 
-
-
+execute:
+  freeze: auto
