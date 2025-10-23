@@ -11,6 +11,8 @@ website:
     left:
       - text: "Home"
         href: index.qmd
+      - text: "Projects"
+        href: projects/index.qmd
     tools:
       - icon: github
         href: https://github.com/sasipimt/blog
