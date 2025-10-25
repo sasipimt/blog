@@ -4,3 +4,4 @@ title: "Projects"
 
 * Mountain classifier 
     * [Single photo](./mountains/single_photo.html)
+    * [Multiple photos](./mountains/multiple_photos.html)

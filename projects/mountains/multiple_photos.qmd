@@ -1,0 +1,39 @@
+---
+title: "Mountain Classifier (Multiple)"
+description: "This mountain classifier recognizes the Matterhorn, Assiniboine, Mont Blanc, and Titlis. Upload images to classify your mountains."
+
+format: 
+    html:
+        css: 'mountain.css'
+---
+
+```{=html}
+<div id="photo-input"><input id="photos" type="file" multiple=""/></div>
+<div id="classifier-output"></div>
+<script type="module">
+    import { Client } from "https://cdn.jsdelivr.net/npm/@gradio/client/dist/index.min.js";
+    async function read(file) {
+        const client = await Client.connect("sasipimt/mountain");
+        const result = await client.predict("/predict", {
+            img: file,
+        });
+        console.log(result.data)
+
+        const label = result.data[0]["confidences"][0]["label"];
+        const conf = result.data[0]["confidences"][0]["confidence"].toFixed(4);
+        const imageUrl = URL.createObjectURL(file);
+
+        const div = document.createElement('div');
+        div.className = 'result-item';
+        div.innerHTML = `<img src="${imageUrl}" width="300"> <p> This is <b>${label}<b/></p> <p>Confidence: ${conf}</p>`;
+
+        const mainContent = document.querySelector('main');
+        if (mainContent) {
+            mainContent.append(div); 
+        } else {
+            document.body.append(div);
+        }
+    }
+    
+    photos.addEventListener("input", () => {[...photos.files].map(read)});
+</script>
