@@ -1,5 +1,6 @@
 #photo-input,
-#results {
+#results,
+.result-item {
   text-align: center;
 }
 

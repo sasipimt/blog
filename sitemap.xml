@@ -2,18 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://sasipimt.github.io/blog/posts/fastai/part1/mountain_classifier.html</loc>
-    <lastmod>2025-10-23T09:50:25.698Z</lastmod>
+    <lastmod>2025-10-25T05:56:41.467Z</lastmod>
   </url>
   <url>
     <loc>https://sasipimt.github.io/blog/projects/mountains/single_photo.html</loc>
-    <lastmod>2025-10-23T09:50:25.699Z</lastmod>
+    <lastmod>2025-10-25T05:56:41.468Z</lastmod>
   </url>
   <url>
     <loc>https://sasipimt.github.io/blog/projects/index.html</loc>
-    <lastmod>2025-10-23T09:50:25.698Z</lastmod>
+    <lastmod>2025-10-25T05:56:41.468Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sasipimt.github.io/blog/projects/mountains/multiple_photos.html</loc>
+    <lastmod>2025-10-25T05:56:41.468Z</lastmod>
   </url>
   <url>
     <loc>https://sasipimt.github.io/blog/index.html</loc>
-    <lastmod>2025-10-23T09:50:25.681Z</lastmod>
+    <lastmod>2025-10-25T05:56:41.450Z</lastmod>
   </url>
 </urlset>
